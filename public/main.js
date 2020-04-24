@@ -28,7 +28,7 @@ $(function() {
   const addParticipantsMessage = (data) => {
     var message = '';
     if (data.numUsers === 1) {
-      message += "there's 1 participant";
+      message += "There's 1 participant";
     } else {
       message += "there are " + data.numUsers + " participants";
     }
@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', (data) => {
     connected = true;
     // Display the welcome message
-    var message = "Welcome to Socket.IO Chat – ";
+    var message = "Welcome to chattly – ";
     log(message, {
       prepend: true
     });
@@ -265,18 +265,18 @@ $(function() {
   });
 
   socket.on('disconnect', () => {
-    log('you have been disconnected');
+    log('You have been disconnected');
   });
 
   socket.on('reconnect', () => {
-    log('you have been reconnected');
+    log('You have been reconnected');
     if (username) {
       socket.emit('add user', username);
     }
   });
 
   socket.on('reconnect_error', () => {
-    log('attempt to reconnect has failed');
+    log('Attempt to reconnect has failed');
   });
 
 });
