@@ -137,7 +137,8 @@ ul {
 /* Input */
 
 .inputMessage {
-  border: 10px solid #66A5AD;
+  border: 4px solid #66A5AD;
+  border-radius: 8px;
   bottom: 0;
   height: 60px;
   left: 0;
@@ -162,7 +163,7 @@ ul {
 }
 
 .loader > img {
-    width: 100px;
+    width: 300px;
 }
 
 .loader.hidden {
