@@ -1,0 +1,1 @@
+var index = Math.abs(hash % COLORS.length);
