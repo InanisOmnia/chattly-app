@@ -85,12 +85,13 @@ ul {
   display: none;
 }
 
-.sticky {
+div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 5px;
+  padding: 5em;
   background-color: lightgreen;
+  border: 2px solid ;
 }
 
 .center {
@@ -99,7 +100,7 @@ ul {
   top: 0%;
   width: 100%;
   text-align: center;
-  font-size: 4em;
+  font-size: 2em;
   color: white;
 }
 /* Font */
