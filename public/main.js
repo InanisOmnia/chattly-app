@@ -184,7 +184,7 @@ $(function() {
        hash = username.charCodeAt(i) + (hash << 5) - hash;
     }
     // Calculate color
-    var index = Math.random(hash % COLORS.length);
+    var index = Math.random(COLORS);
     return COLORS[index];
   }
 
