@@ -65,7 +65,7 @@ ul {
 .login.page .form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid black;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
