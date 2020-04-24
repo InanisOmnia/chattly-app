@@ -30,7 +30,7 @@ $(function() {
     if (data.numUsers === 1) {
       message += "There's 1 participant";
     } else {
-      message += "there are " + data.numUsers + " participants";
+      message += "There are " + data.numUsers + " participants";
     }
     log(message);
   }
@@ -184,7 +184,7 @@ $(function() {
        hash = username.charCodeAt(i) + (hash << 5) - hash;
     }
     // Calculate color
-    var index = Math.abs(hash % COLORS.length);
+    var index = Math.random(hash % COLORS.length);
     return COLORS[index];
   }
 
