@@ -1,3 +1,4 @@
+
 /* Fix user-agent */
 
 * {
@@ -17,6 +18,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-y: hidden;
 }
 
 ul {
@@ -89,9 +91,9 @@ div.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 5em;
+  padding: 1.5em;
   background-color: lightgreen;
-  border: 2px solid ;
+  border-bottom: 2px solid black;
 }
 
 .center {
@@ -102,6 +104,7 @@ div.sticky {
   text-align: center;
   font-size: 2em;
   color: white;
+  padding-top: 0.15em
 }
 /* Font */
 
