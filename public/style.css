@@ -10,14 +10,7 @@ html {
 }
 
 html, input {
-  font-family:
-    "HelveticaNeue-Light",
-    "Helvetica Neue Light",
-    "Helvetica Neue",
-    Helvetica,
-    Arial,
-    "Lucida Grande",
-    sans-serif;
+  font-family: 'Comfortaa', cursive;
 }
 
 html, body {
@@ -49,7 +42,7 @@ ul {
 /* Login Page */
 
 .login.page {
-  background-color: white;
+  background-color: lightgreen;
 }
 
 .login.page .form {
@@ -65,7 +58,7 @@ ul {
 .login.page .form .usernameInput {
   background-color: transparent;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid white;
   outline: none;
   padding-bottom: 15px;
   text-align: center;
@@ -82,7 +75,7 @@ ul {
 }
 
 .login.page .title, .login.page .usernameInput {
-  color: black;
+  color: white;
   font-weight: 100;
 }
 
@@ -137,8 +130,7 @@ ul {
 /* Input */
 
 .inputMessage {
-  border: 4px solid #66A5AD;
-  border-radius: 8px;
+  border: 4px solid lightgreen;
   bottom: 0;
   height: 60px;
   left: 0;
