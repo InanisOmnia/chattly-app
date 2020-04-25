@@ -86,7 +86,7 @@ ul {
 .chat.page {
   display: none;
 }
-
+/*
 div.sticky {
   position: -webkit-sticky;
   position: sticky;
@@ -105,7 +105,7 @@ div.sticky {
   font-size: 2em;
   color: white;
   padding-top: 0.15em
-}
+}*/
 /* Font */
 
 .messages {
