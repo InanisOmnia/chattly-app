@@ -229,7 +229,7 @@ $(function() {
   socket.on('login', (data) => {
     connected = true;
     // Display the welcome message
-    var message = "<br>"+"<br>"+"Welcome to chattly";
+    var message = "\n\n\n\n\n\n\n\n\n\n\nWelcome to chattly";
     log(message, {
       prepend: true
     });
