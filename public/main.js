@@ -179,7 +179,7 @@ $(function() {
   // Gets the color of a username through our hash function
   const getUsernameColor = (username) => {
     // Compute hash code
-    var hash = 7
+    var hash = 7;
     for (var i = 0; i < username.length; i++) {
        hash = username.charCodeAt(i) + (hash << 5) - hash;
     }
