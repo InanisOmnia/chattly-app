@@ -99,8 +99,6 @@ ul {
   top: 0;
   padding: 2.5em;
   background-color: white;
-  border-bottom: 4px solid black;
-  border-radius: 5px
 }
 
 .center {
@@ -111,12 +109,12 @@ ul {
   text-align: center;
   font-size: 2em;
   color: black;
-  padding-top: 0.2em;
+
 }
 
 .git-svg{
   position: absolute;
-  width: 4%;
+  height: 80%;
   z-index: 1;
   top: 14%;
   left: 5%
