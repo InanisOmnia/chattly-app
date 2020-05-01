@@ -12,6 +12,7 @@
 html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
+  font-family: 'Comfortaa', cursive;
 }
 
 html, input {
@@ -23,11 +24,13 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
+  font-family: 'Comfortaa', cursive;
 }
 
 ul {
   list-style: none;
   word-wrap: break-word;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* Pages */
@@ -94,9 +97,10 @@ ul {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 1.5em;
+  padding: 2.5em;
   background-color: white;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid black;
+  border-radius: 5px
 }
 
 .center {
@@ -108,7 +112,14 @@ ul {
   font-size: 2em;
   color: black;
   padding-top: 0.2em;
-  padding-right: .5em
+}
+
+.git-svg{
+  position: absolute;
+  width: 4%;
+  z-index: 1;
+  top: 15%;
+  left: 5%
 }
 /* Font */
 
