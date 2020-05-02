@@ -7,29 +7,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@500&display=swap" rel="stylesheet">
   <link rel="SHORTCUT ICON"  href="./Favicon/favicon.ico">
 <body>
-  <ul class="pages">
-    <li class="chat page">
+  <div class="pages">
+    <div class="chat page">
       <div class="chatArea">
-        <ul class="messages"></ul>
+        <div class="messages"></div>
       </div>
       <input class="inputMessage" placeholder="Type here..."/>
-    </li>
+    </div>
     <div class="sticky">
       <div class="center">
-        chattly.xyz
+        <div class="header-text">
+          chattly.xyz
+        </div>
+        <div class="patreon-container">
         <a href="https://www.patreon.com/bePatron?u=34578542" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-        <a class="github-url" style="text-decoration: none; color: black; text-align: center;" href="https://github.com/MichaelGrigoryan25/chattly-app"/>
-          <img class="git-svg" src="SVG/github.svg" alt="gitsvg">
-        </a>
+        </div>
       </div>
     </div>
-    <li class="login page">
+    <div class="login page">
       <div class="form">
         <h3 class="title">Choose your nickname</h3>
         <input class="usernameInput" type="text" maxlength="50" />
       </div>
-    </li>
-  </ul>
+      <div class="footer">
+        Coded With ♥ By <a href="https://github.com/MichaelGrigoryan25/chattly-app">Michael Grigoryan</a>
+      </div>
+    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
   <script src="/socket.io/socket.io.js"></script>

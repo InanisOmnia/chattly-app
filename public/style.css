@@ -27,7 +27,7 @@ html, body {
   font-family: 'Comfortaa', cursive;
 }
 
-ul {
+div {
   list-style: none;
   word-wrap: break-word;
   font-family: 'Comfortaa', cursive;
@@ -59,7 +59,7 @@ ul {
   margin-top: -100px;
   position: absolute;
   text-align: center;
-  top: 50%;
+  top: 45%;
   width: 100%;
 }
 
@@ -71,6 +71,22 @@ ul {
   padding-bottom: 15px;
   text-align: center;
   width: 400px;
+}
+
+.footer {
+  z-index: 1;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  color: black;
+  text-align: center;
+  padding: 6em;
+}
+
+.footer a {
+  text-decoration: none;
 }
 
 .login.page .title {
@@ -103,7 +119,7 @@ ul {
 
 .center {
   position: absolute;
-  left: 0;
+  left: 0%;
   top: 0%;
   width: 100%;
   text-align: center;
