@@ -14,16 +14,17 @@ npm start
 # Tree view
 
 ```bash
-|/public
-    |/Favicon
-    |/SVG
-    |index.html
-    |style.css
-    |main.js
+.
+|--/public
+    /Favicon
+    /SVG
+    index.html
+    style.css
+    main.js
 
-|index.js
-|package.json
-|README.md
+|-index.js
+|-package.json
+|-README.md
 ```
 
 # Contributing
