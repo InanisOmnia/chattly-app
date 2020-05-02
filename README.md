@@ -11,7 +11,22 @@ npm install socket.io
 npm start
 ```
 
-## Contributing
+# Tree view
+
+```bash
+|/public
+    |/Favicon
+    |/SVG
+    |index.html
+    |style.css
+    |main.js
+
+|index.js
+|package.json
+|README.md
+```
+
+# Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
 Please make sure to update tests as appropriate.
