@@ -37,4 +37,4 @@ Please make sure to update tests as appropriate.
 https://chattly.xyz
 
 # License
-[[MIT]license]
+[MIT]
