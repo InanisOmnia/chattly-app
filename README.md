@@ -35,3 +35,6 @@ Please make sure to update tests as appropriate.
 
 # Official website
 https://chattly.xyz
+
+# License
+[[MIT]license]
