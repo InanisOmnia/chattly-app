@@ -2,15 +2,18 @@
 var express = require('express');
 var app = express();
 var path = require('path');
-var server = require('http').createServer(app);
+var server = require('https').createServer(app);
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
-
 const fs = require('fs');
 const cert = fs.readFileSync('./ssl/certificate.crt');
 const ca = fs.readFileSync('./ssl/ca_bundle.crt');
 const key = fs.readFileSync('./ssl/private.key');
-
+let options = {
+   cert: cert, // fs.readFileSync('./ssl/example.crt');
+   ca: ca, // fs.readFileSync('./ssl/example.ca-bundle');
+   key: key // fs.readFileSync('./ssl/example.key');
+};
 server.listen(port, () => {
   console.log('Server listening at port %d', port);
 });
