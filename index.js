@@ -1,26 +1,30 @@
 // Setup basic express server
 const express = require('express');
-const fs = require('fs');
 var app = express();
 var path = require('path');
-const https = require('https');
 var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
-const options = {
-  key:fs.readFileSync('./ssl/private.key'),
-  cert:fs.readFileSync('./ssl/certificate.crt'),
+//SSL START
+const fs = require('fs');
+const https = require('https');
+const httpsPort = 443;
+const hostname = 'chat.chattly.xyz';
+
+const httpsOptions = {
+  cert: fs.readFileSync('./ssl/certificate.crt'),
+  ca: fs.readFileSync('./ssl/ca_bundle.crt'),
+  key: fs.readFileSync('./ssl/private.key')
 }
-
-https.createServer(options, function (req, res) {
-  res.writeHead(200);
-  res.end("END\n");
+const httpsServer = https.createServer(httpsOptions, app)
+app.use((req, res, next) => {
+   if(req.protocol === 'http') {
+     res.redirect(301, `https://${req.headers.host}${req.url}`);
+   }
+   next();
 });
-
-server.listen(port, () => {
-  console.log('Server listening at port %d', port);
-});
+//SSL END
 
 // Routing
 app.use(express.static(path.join(__dirname, 'public')));
