@@ -6,26 +6,6 @@ var server = require('http').createServer(app);
 var io = require('socket.io')(server);
 var port = process.env.PORT || 3000;
 
-//SSL START
-const fs = require('fs');
-const https = require('https');
-const httpsPort = 443;
-const hostname = 'chat.chattly.xyz';
-
-const httpsOptions = {
-  cert: fs.readFileSync('./ssl/certificate.crt'),
-  ca: fs.readFileSync('./ssl/ca_bundle.crt'),
-  key: fs.readFileSync('./ssl/private.key')
-}
-const httpsServer = https.createServer(httpsOptions, app)
-app.use((req, res, next) => {
-   if(req.protocol === 'http') {
-     res.redirect(301, `https://${req.headers.host}${req.url}`);
-   }
-   next();
-});
-//SSL END
-
 // Routing
 app.use(express.static(path.join(__dirname, 'public')));
 
