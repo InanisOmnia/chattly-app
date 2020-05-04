@@ -1,3 +1,12 @@
+const fs = require('fs');
+const cert = fs.readFileSync('./ssl/certificate.crt');
+const ca = fs.readFileSync('./ssl/ca_bundle.crt');
+const key = fs.readFileSync('./ssl/private.key');
+let options = {
+   cert: cert, // fs.readFileSync('./ssl/example.crt');
+   ca: ca, // fs.readFileSync('./ssl/example.ca-bundle');
+   key: key // fs.readFileSync('./ssl/example.key');
+};
 $(function() {
   var FADE_TIME = 150; // ms
   var TYPING_TIMER_LENGTH = 400; // ms
