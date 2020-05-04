@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.com/MichaelGrigoryan25/chattly-app.svg?branch=master)](https://travis-ci.com/MichaelGrigoryan25/chattly-app)
 # Getting started
 Clone the repository.
 ```bash
