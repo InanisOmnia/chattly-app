@@ -1,3 +1,4 @@
+[![Run on Repl.it](https://repl.it/badge/github/MichaelGrigoryan25/chattly-app)](https://repl.it/github/MichaelGrigoryan25/chattly-app)
 # Getting started
 Clone the repository.
 ```bash
