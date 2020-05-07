@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <script src="https://meet.jit.si/external_api.js"></script>
+        <script>
+            var domain = "meet.chattly.xyz";
+            var options = {
+                roomName: "testingnewindex.html",
+                width: 1440,
+                height: 1000,
+                parentNode: undefined,
+                configOverwrite: {},
+                interfaceConfigOverwrite: {
+                    filmStripOnly: false
+                }
+            }
+            var api = new JitsiMeetExternalAPI(domain, options);
+        </script>
+    </body>
+</html>
