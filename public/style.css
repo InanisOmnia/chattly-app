@@ -12,11 +12,11 @@
 html {
   font-weight: 300;
   -webkit-font-smoothing: antialiased;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat';
 }
 
 html, input {
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat';
 }
 
 html, body {
@@ -24,13 +24,13 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat';
 }
 
 div {
   list-style: none;
   word-wrap: break-word;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Montserrat';
 }
 
 /* Pages */
