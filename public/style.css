@@ -1,17 +1,9 @@
-
-/* Fix user-agent */
-
-@media only screen and (max-width: 500px) {
-
-}
-
 * {
   box-sizing: border-box;
 }
 
 html {
   font-weight: 300;
-  -webkit-font-smoothing: antialiased;
   font-family: 'Montserrat';
 }
 
@@ -20,7 +12,6 @@ html, input {
 }
 
 html, body {
-  height: 100%;
   margin: 0;
   padding: 0;
   overflow-y: hidden;
