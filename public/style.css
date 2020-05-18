@@ -4,24 +4,24 @@
 
 html {
   font-weight: 300;
-  font-family: 'Montserrat';
+  font-family: 'Varela Round', sans-serif;
 }
 
 html, input {
-  font-family: 'Montserrat';
+  font-family: 'Varela Round', sans-serif;
 }
 
 html, body {
   margin: 0;
   padding: 0;
   overflow-y: hidden;
-  font-family: 'Montserrat';
+  font-family: 'Varela Round', sans-serif;
 }
 
 div {
   list-style: none;
   word-wrap: break-word;
-  font-family: 'Montserrat';
+  font-family: 'Varela Round', sans-serif;
 }
 
 /* Pages */
@@ -61,7 +61,7 @@ div {
   outline: none;
   padding-bottom: 15px;
   text-align: center;
-  width: 400px;
+  width: 25vw;
 }
 
 .footer {
@@ -114,17 +114,12 @@ div {
   top: 0%;
   width: 100%;
   text-align: center;
-  font-size: 2em;
   color: black;
 
 }
 
-.git-svg{
-  position: absolute;
-  height: 80%;
-  z-index: 1;
-  top: 14%;
-  left: 5%
+.header-text {
+  font-size: 3.5em;
 }
 /* Font */
 

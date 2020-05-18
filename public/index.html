@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>chattly</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-  <link rel="SHORTCUT ICON"  href="./Favicon/favicon.ico">
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet"> 
+  <!--<link rel="SHORTCUT ICON" href="./Favicon/favicon.ico">-->
 </head>
+
 <body>
   <div class="pages">
     <div class="chat page">
       <div class="chatArea">
         <div class="messages"></div>
       </div>
-      <input class="inputMessage" placeholder="Type here..."/>
+      <input class="inputMessage" placeholder="Type here..." />
     </div>
     <div class="sticky">
       <div class="center">
         <div class="header-text">
           chattly.xyz
         </div>
-        <div class="patreon-container">
-          <a href="https://www.patreon.com/bePatron?u=34578542" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-        </div>
+        <div class="patreon-container"></div>
       </div>
     </div>
     <div class="login page">
       <div class="form">
-        <h3 class="title">Choose your nickname</h3>
+        <h3 class="title">Nickname</h3>
         <input class="usernameInput" type="text" maxlength="50" />
       </div>
       <div class="footer">
@@ -39,4 +39,5 @@
   <script src="/socket.io/socket.io.js"></script>
   <script src="/main.js"></script>
 </body>
+
 </html>
