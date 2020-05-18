@@ -14,7 +14,6 @@ html, input {
 html, body {
   margin: 0;
   padding: 0;
-  overflow-y: hidden;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -64,9 +63,8 @@ div {
   width: 25vw;
 }
 
-.footer {
+footer.footer {
   z-index: 1;
-  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -76,7 +74,7 @@ div {
   padding: 6em;
 }
 
-.footer a {
+footer a {
   text-decoration: none;
 }
 
