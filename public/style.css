@@ -173,7 +173,7 @@ div {
 
 .inputMessage {
   border: 2px solid black;
-  border-radius: 2px;
+  border-radius: 2vw;
   bottom: 0;
   height: 60px;
   left: 0;
