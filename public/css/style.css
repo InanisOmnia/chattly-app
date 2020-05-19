@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
+
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgb(0, 0, 0);
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+
+	color: white;
+	background-color: rgb(45, 45, 45);
+
+	font-family: 'PT Serif', serif;
+
+	min-height: 400px;
+	margin-bottom: 100px;
+	clear: both;
+}
+
+/* Navigation bar */
+nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(120, 0, 255);
+
+}
+
+nav img {
+	float: right;
+	display: block;
+	text-decoration: none;
+}
+
+nav img {
+	width:90px;
+	height:55px;
+/*  max-width:50%;
+max-height:50%;*/
+}
+
+
+#navElt {
+	float: left;
+}
+
+#navElt {
+	height: 100%;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	background-color: rgb(120, 0, 255);
+
+}
+
+#navElt:hover {
+	background-color: rgb(0, 0, 0);
+	transition: 1.5s;
+}
+
+
+
+/* Body */
+h1 {
+	text-align: center;
+}
+
+h3 {
+	text-align: center;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a:link, a:visited {
+	color: rgb(180, 100, 255) /*hotpink*/;
+}
+
+a:hover, a:active {
+	color: green;
+}
+
+/* Create three equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 100%;
+  padding: 15px;
+}
+.column2 {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+.column3 {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+.column4 {
+  float: left;
+  width: 25%;
+  padding: 15px;
+}
+.column5 {
+  float: left;
+  width: 20%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:700px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+.box{
+	border-radius: 5px;
+	margin: auto;
+	width: 70%;
+	padding: 40px;
+	background: #191919;
+	text-align: center;
+}
+.box h1{
+	color: white;
+	font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"],.box input[type = "email"],.box textarea,.box select{
+	border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid rgb(120, 0, 255);
+	padding: 14px 10px;
+	width: 70%;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+}
+.box textarea {
+	max-width: 100%;
+	min-height: 40px;
+}
+
+.box input[type = "text"]:focus,.box input[type = "password"]:focus,.box input[type = "email"]:focus,.box textarea:focus,.box select:focus{
+	width: 100%;
+	border-color: #2ecc71;
+}
+.box input[type = "submit"]{
+	border:0;
+	background: none;
+	display: block;
+	margin: 20px auto;
+	text-align: center;
+	border: 2px solid rgb(120, 0, 255);
+	padding: 14px 40px;
+	outline: none;
+	color: white;
+	border-radius: 24px;
+	transition: 0.25s;
+	cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+	background: #2ecc71;
+}
+
+
+
+
+
+
+
+
+/* Footer */
+#footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: rgb(120, 0, 255);
+	color: white;
+	text-align: center;
+}
+
+/* Animations */
+
+@keyframes sizeIntro {
+
+	0%   {font-size: 0px; color: black; text-align: center;}
+	100% {font-size: 30px; color: white; text-align: center;}
+}
+
+.sizeIntroAnimation {
+	animation: sizeIntro 4s 0s ease both
+}
