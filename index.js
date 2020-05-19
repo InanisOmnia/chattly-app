@@ -4,6 +4,7 @@ const port = process.env.PORT || 3000;
 const express = require('express');
 const app = express();
 const server = app.listen(port, () => {
+
   console.log(`Server listening at port ${port}`);
 });
 const io = require('socket.io')(server);
@@ -29,6 +30,7 @@ const statics = [
   
 app.use(middlewares);
 app.use(statics);
+
 
 // Routing
 app.get("/", (req, res) => {
