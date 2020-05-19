@@ -1,9 +1,14 @@
 // Setup basic express server
-const port = process.env.PORT || 3000;
-
+const port = process.env.PORT || 3000
 const express = require('express');
 const app = express();
 const server = app.listen(port, () => {
+<<<<<<< HEAD
+  console.log(`Server listening at port ${port}`);
+});
+const io = require('socket.io')(server);
+const path = require('path');
+=======
 
   console.log(`Server listening at port ${port}`);
 });
@@ -32,6 +37,7 @@ app.use(middlewares);
 app.use(statics);
 
 
+>>>>>>> c604c498ab34c0830057548b5c2b8506e4acbe93
 // Routing
 app.get("/", (req, res) => {
   res.render("index");
