@@ -3,12 +3,6 @@ const port = process.env.PORT || 3000
 const express = require('express');
 const app = express();
 const server = app.listen(port, () => {
-<<<<<<< HEAD
-  console.log(`Server listening at port ${port}`);
-});
-const io = require('socket.io')(server);
-const path = require('path');
-=======
 
   console.log(`Server listening at port ${port}`);
 });
