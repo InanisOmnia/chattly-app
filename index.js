@@ -7,8 +7,6 @@ const server = app.listen(port, () => {
 });
 const io = require('socket.io')(server);
 const path = require('path');
-// Routing
-app.use(express.static(path.join(__dirname, 'public')));
 
 const bodyParser = require("body-parser");
 const path = require('path');
@@ -37,6 +35,7 @@ app.use(statics);
 app.get("/", (req, res) => {
   res.render("index");
 });
+
 
 // Chatroom
 var numUsers = 0;
