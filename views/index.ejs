@@ -1,27 +1,35 @@
-<div class="header">
-	<img src="/images/CEDS_banner2.png" width="100%" />
-</div>
-<%- include("partials/navbar") %>
+<%- include("partials/underDevelopment") %>
 
-<h1>Welcome to CEDS!</h1>
-<br />
-<div class="row">
-  <div class="column">
-    <h2>Header (optional)</h2>
-    <p>CEDS, Colne Engaine Amateur Dramatics Society, cont...</p>
+<h1>Welcome!</h1>
+
+<div class="pages">
+  <div class="chat page">
+    <div class="chatArea">
+      <div class="messages"></div>
+    </div>
+    <input class="inputMessage" placeholder="Type here..." />
   </div>
-  
-  <div class="column">
-    <h2>Header (optional)</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam aliquam sem. Ultrices gravida dictum fusce ut placerat orci nulla. Vitae nunc sed velit dignissim sodales ut eu sem integer. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Arcu risus quis varius quam quisque id diam vel quam. Amet est placerat in egestas erat. Eget aliquet nibh praesent tristique magna sit amet purus. Maecenas ultricies mi eget mauris pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Tellus rutrum tellus pellentesque eu tincidunt.</p>
+  <div class="sticky">
+    <div class="center">
+      <div class="header-text">
+        chattly.xyz
+      </div>
+      <div class="patreon-container"></div>
+    </div>
   </div>
-  
-  <div class="column">
-    <h2>Header (optional)</h2>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque vitae tempus quam pellentesque nec nam aliquam sem. Ultrices gravida dictum fusce ut placerat orci nulla. Vitae nunc sed velit dignissim sodales ut eu sem integer. Egestas fringilla phasellus faucibus scelerisque eleifend donec pretium. Arcu risus quis varius quam quisque id diam vel quam. Amet est placerat in egestas erat. Eget aliquet nibh praesent tristique magna sit amet purus. Maecenas ultricies mi eget mauris pharetra. Rhoncus aenean vel elit scelerisque mauris pellentesque pulvinar. Tellus rutrum tellus pellentesque eu tincidunt.</p>
+  <div class="login page">
+    <div class="form">
+      <h3 class="title">Nickname</h3>
+      <input class="usernameInput" type="text" maxlength="50" />
+    </div>
+    <footer class="footer">
+      Coded With ❤ By <a href="https://github.com/MichaelGrigoryan25/chattly-app">Michael Grigoryan</a>
+    <footer>
   </div>
 </div>
-
+<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/js/main.js"></script>
 
 
 <%- include("partials/footer") %>
