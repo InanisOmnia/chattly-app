@@ -63,19 +63,14 @@ div {
   width: 25vw;
 }
 
-footer.footer {
+footer {
+  position: fixed;
   z-index: 1;
-  left: 0;
-  bottom: 0;
+  bottom: 0%;
   width: 100%;
-  background-color: white;
-  color: black;
   text-align: center;
-  padding: 6em;
-}
-
-footer a {
-  text-decoration: none;
+  align-items: center;
+  justify-content: center;
 }
 
 .login.page .title {
@@ -102,7 +97,6 @@ footer a {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 2.5em;
   background-color: white;
 }
 
