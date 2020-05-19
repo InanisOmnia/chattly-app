@@ -31,7 +31,6 @@ app.use(middlewares);
 app.use(statics);
 
 
->>>>>>> c604c498ab34c0830057548b5c2b8506e4acbe93
 // Routing
 app.get("/", (req, res) => {
   res.render("index");
