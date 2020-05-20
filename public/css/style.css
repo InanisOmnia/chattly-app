@@ -105,6 +105,7 @@ footer a {
   top: 0;
   padding: 2.5em;
   background-color: white;
+  border-bottom: 3px solid black;
 }
 
 .center {
@@ -141,8 +142,8 @@ footer a {
 
 .chatArea {
   height: 100%;
-  padding-top:85px;
-  padding-bottom: 60px;
+  padding-top: 10.99vh;
+  padding-bottom: 8.5vh;
 }
 
 .messages {
