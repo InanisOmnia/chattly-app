@@ -1,4 +1,7 @@
 # Getting started
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d9a06643bec04f9a87f7e1853acd6023)](https://app.codacy.com/manual/MichaelGrigoryan25/chattly-app?utm_source=github.com&utm_medium=referral&utm_content=MichaelGrigoryan25/chattly-app&utm_campaign=Badge_Grade_Dashboard)
+
 Clone the repository.
 ```bash
 git clone https://github.com/MichaelGrigoryan25/chattly-app.git
