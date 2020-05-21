@@ -11,6 +11,10 @@ Download and Install [Node.js](https://nodejs.org/en/).
 ```bash
 npm install express
 npm install socket.io
+npm install cors
+npm install express-ejs-layouts
+npm install ejs
+npm install body-parser
 npm start
 ```
 
