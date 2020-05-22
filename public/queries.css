@@ -1,4 +1,4 @@
-@media screen and (min-width: 990px) {
+@media screen and (max-width: 990px) {
     * {
         box-sizing: border-box;
     }
@@ -50,9 +50,9 @@
         outline: none;
         padding-bottom: 15px;
         text-align: center;
-        width: 25vw;
+        width: 70vw;
     }
-    footer.footer {
+    footer {
         z-index: 1;
         left: 0;
         bottom: 0;
@@ -96,7 +96,7 @@
         color: black;
     }
     .header-text {
-        font-size: 3.5em;
+        font-size: 2em;
     }
     /* Font */
     .messages {
