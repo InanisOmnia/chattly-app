@@ -19,6 +19,12 @@
         word-wrap: break-word;
         font-family: 'Varela Round', sans-serif;
     }
+
+    .dark-mode {
+        background-color: black;
+        color: white;
+    }
+
     /* Pages */
     .pages {
         height: 100%;
