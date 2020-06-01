@@ -106,20 +106,20 @@ footer a {
   top: 0;
   padding: 2.5em;
   background-color: white;
-  border-bottom: 2px solid black;
 }
 
-.center {
+.left {
   position: absolute;
   left: 0%;
   top: 0%;
   width: 100%;
-  text-align: center;
+  padding-left: 3vw;
+  padding-top: 1vh;
   color: black;
 }
 
 .header-text {
-  font-size: 3.5em;
+  font-size: 3.3em;
 }
 
 /* Font */
@@ -286,7 +286,8 @@ footer a {
       color: black;
   }
   .header-text {
-      font-size: 3.5em;
+      font-size: 2.5em;
+      padding-left: 5vw;
   }
   /* Font */
   .messages {
