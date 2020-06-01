@@ -88,8 +88,12 @@ div {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  padding: 2.5em;
+  padding: 3em;
   background-color: white;
+  border: 0.1px solid black;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
 }
 
 .left {
@@ -153,7 +157,7 @@ div {
 
 .inputMessage {
   border: 2px solid black;
-  border-radius: 2vw;
+  border-radius: 1.5vw;
   bottom: 0;
   height: 60px;
   left: 0;
