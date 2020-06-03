@@ -16,11 +16,17 @@ const bodyParser = require("body-parser");
 const initializePassport = require('./passport-config')
 initializePassport(
   passport,
-  email => users.find(user => user.email === email),
-  id => users.find(user => user.id === id)
+  function (passed_email, found) {
+    userdb.find({ email: passed_email }, (err, docs) => {
+      found(docs[0]);
+    });
+  },
+  function (passed_id, found) {
+    userdb.find({ _id: passed_id }, (err, docs) => {
+      found(docs[0])
+    });
+  }
 )
-
-const users = []
 
 app.set("views", path.join(__dirname, "views"));
 app.set('view-engine', 'ejs')
@@ -37,10 +43,20 @@ app.use(methodOverride('_method'))
 
 app.use(cors())
 // app.use(expressLayouts)
-app.use(bodyParser.urlencoded({	extended: false}))
-app.use(express.json({limit: "1mb"}))
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(express.json({ limit: "1mb" }))
 app.use(express.static(path.join(__dirname, "public")))
 
+// Setup Database
+const database = require("nedb");
+const userdb = new database("./data/users.db");
+userdb.loadDatabase();
+console.log("db loaded");
+
+
+function reloadDB() {
+  userdb.loadDatabase();
+}
 
 app.get('/', checkAuthenticated, (req, res) => {
   res.render('chat.ejs', { name: req.user.name })
@@ -63,8 +79,7 @@ app.get('/register', checkNotAuthenticated, (req, res) => {
 app.post('/register', checkNotAuthenticated, async (req, res) => {
   try {
     const hashedPassword = await bcrypt.hash(req.body.password, 10)
-    users.push({
-      id: Date.now().toString(),
+    userdb.insert({
       name: req.body.name,
       email: req.body.email,
       password: hashedPassword
