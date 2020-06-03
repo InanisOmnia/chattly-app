@@ -43,7 +43,7 @@ app.use(express.static(path.join(__dirname, "public")))
 
 
 app.get('/', checkAuthenticated, (req, res) => {
-  res.render('index.ejs', { name: req.user.name })
+  res.render('chat.ejs', { name: req.user.name })
 })
 
 app.get('/login', checkNotAuthenticated, (req, res) => {
@@ -80,9 +80,6 @@ app.delete('/logout', (req, res) => {
   res.redirect('/login')
 })
 
-app.get("/chat", (req, res) => {
-  res.render("chat.ejs")
-})
 
 function checkAuthenticated(req, res, next) {
   if (req.isAuthenticated()) {

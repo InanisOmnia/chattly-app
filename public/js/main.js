@@ -203,8 +203,6 @@ $(function() {
         sendMessage();
         socket.emit('stop typing');
         typing = false;
-      } else {
-        setUsername();
       }
     }
   });
@@ -280,5 +278,8 @@ $(function() {
   socket.on('reconnect_error', () => {
     log('Attempt to reconnect has failed');
   });
+
+// once everything setup, set the username and begin chatting with pre-set username
+  setUsername();
 
 });

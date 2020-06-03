@@ -25,13 +25,16 @@
       <div class="left">
         <div class="header-text">
           <a style="color: black; text-decoration: none;" href="https://chattly.xyz"><strong>chattly</strong></a>
+          <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit">Log Out</button>
+          </form>
         </div>
       </div>
     </div>
     <div class="login page">
       <div class="form">
         <h3 class="title">Nickname</h3>
-        <input class="usernameInput" type="text" maxlength="50" />
+        <input class="usernameInput" type="text" maxlength="50" value="<%= name %>" disabled />
       </div>
     </div>
   </div>
