@@ -1,6 +1,7 @@
 # Getting started
 
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/d9a06643bec04f9a87f7e1853acd6023)](https://app.codacy.com/manual/MichaelGrigoryan25/chattly-app?utm_source=github.com&utm_medium=referral&utm_content=MichaelGrigoryan25/chattly-app&utm_campaign=Badge_Grade_Dashboard)
+[![DeepScan grade](https://deepscan.io/api/teams/9388/projects/11876/branches/177329/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=9388&pid=11876&bid=177329)
 
 Clone the repository.
 ```bash

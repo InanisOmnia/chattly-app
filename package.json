@@ -1,11 +1,11 @@
 {
   "name": "chattly",
-  "version": "0.0.15a",
+  "version": "0.0.15",
   "description": "chattly-app",
   "main": "index.js",
   "author": "Michael Grigoryan",
-  "private": true,
-  "license": "MIT",
+  "private": false,
+  "license": "BSD3-Clause",
   "dependencies": {
     "express": "~4.17.1",
     "socket.io": "~2.3.0"
