@@ -1,0 +1,21 @@
+<%- include("partials/navbar", {user:user}) %>
+
+<div class="container">
+    <div class="page-wrap d-flex flex-row align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 text-center">
+                    <!-- <span class="display-1 d-block">404</span> -->
+                    <!-- <h1 class="display-1">4 <i class="fa fa-spin fa-cog fa-3x"></i> 4</h1> -->
+                    <h1 class="display-1 p-5"><i class="fa fa-spin fa-cog fa-3x"></i></h1>
+                    <div class="mb-4 lead">Something went kinda wrong there... whoops</div>
+                    <a class="btn btn-primary btn-lg" href="/" role="button">Go To Home</a>
+                    <a class="btn btn-primary btn-lg" onClick="window.location.reload();" role="button">Refresh Page</a>
+                    <a class="btn btn-primary btn-lg" onClick="history.go(-1);" role="button">Go Back</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<%- include("partials/footer", {user:user}) %>

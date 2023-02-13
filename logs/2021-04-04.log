@@ -1,0 +1,60 @@
+2021-04-04 16:04:01 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:78:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}
+2021-04-04 16:04:05 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:78:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}
+2021-04-04 16:17:24 [CRITICAL]: Uncaught Exception: TypeError: cb is not a function
+    at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:33:13)
+    at Socket.emit (node:events:376:20)
+    at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (node:internal/process/task_queues:75:11)
+At uncaughtException
+2021-04-04 16:17:38 [CRITICAL]: Uncaught Exception: TypeError: cb is not a function
+    at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:33:13)
+    at Socket.emit (node:events:376:20)
+    at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (node:internal/process/task_queues:75:11)
+At uncaughtException
+2021-04-04 16:17:54 [CRITICAL]: Uncaught Exception: TypeError: cb is not a function
+    at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:33:13)
+    at Socket.emit (node:events:376:20)
+    at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+    at processTicksAndRejections (node:internal/process/task_queues:75:11)
+At uncaughtException
+2021-04-04 16:27:26 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:80:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}
+2021-04-04 16:27:50 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:78:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}
+2021-04-04 16:51:16 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:78:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}
+2021-04-04 16:51:21 [CRITICAL]: Unhandled Rejection at: Promise {
+  <rejected> TypeError: cb is not a function
+      at Socket.<anonymous> (C:\Users\Owner\Documents\GitHub\chattly-app\socketServer.js:78:20)
+      at Socket.emit (node:events:376:20)
+      at C:\Users\Owner\Documents\GitHub\chattly-app\node_modules\socket.io\lib\socket.js:528:12
+      at processTicksAndRejections (node:internal/process/task_queues:75:11)
+}

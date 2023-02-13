@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="PROJECT" libraries="{7201f84aec, MaterialDesign-Webfont, bootstrap, jquery-1.10.2, jquery-3.5.1, jquery-3.5.1.slim, popper.js, socket.io, twemoji}" />
+    <includedPredefinedLibrary name="Node.js Core" />
+  </component>
+</project>

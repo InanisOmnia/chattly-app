@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>chattly</title>
+
+    <meta name="description" content="Chat with friends and family!">
+    <meta name="keywords" content="chat, talk, communicate, chatly, chattly, speak, social">
+    <meta name="author" content="Inanis">
+    <meta lang="EN">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/7201f84aec.js" crossorigin="anonymous"></script>
+    <script src="https://www.jsdelivr.com/package/npm/font-awesome-animation"></script>
+
+    <script src="https://twemoji.maxcdn.com/v/latest/twemoji.min.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+            integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+            crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+          integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css"
+          integrity="sha256-nwNjrH7J9zS/Ti4twtWX7OsC5QdQHCIKTv5cLMsGo68=" crossorigin="anonymous" />
+
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+<script>
+    const flashMsg = <%- JSON.stringify(flashMsg) %>;
+</script>
+
+    <%- body %>
+
+<!-- START Bootstrap-Cookie-Alert -->
+<div class="alert text-center cookiealert" role="alert">
+    <b>Do you like cookies?</b> &#x1F36A; We use cookies to ensure you get the best experience on our website. By
+    using our website you are agreeing to our cookie policy <a href="/info/cookies">Learn more</a>
+
+    <button type="button" class="btn btn-primary btn-sm acceptcookies">
+        I understand
+    </button>
+    <button type="button" class="btn btn-primary btn-sm dismisscookies">
+        Dismiss
+    </button>
+</div>
+<!-- END Bootstrap-Cookie-Alert -->
+
+
+<div class="toast-container p-3" id="toastContainer" style="position: absolute; top: 0; right: 0;"></div>
+
+<script src="/js/script.js"></script>
+<script src="/js/genToast.js"></script>
+<script>
+    const element = new Image();
+    Object.defineProperty(element, 'id', {
+        get: function () {
+            /* function called when DevTools is opened */
+            console.log("%cHold It Right There!", "background: none; color: #1cb2ba; font-size: 80px; -webkit-text-stroke-width: 3px; -webkit-text-stroke-color: #000;");
+            console.log("%cSomeone asked you to type something here? This could be an attempt to access your account. Tinker and the Tinker Team will never ask you to use this window. Stay safe and close out of here", "background: none; color: red; font-size: large;");
+            console.log("%cWe understand your enthusiasm to have a poke around our code... to see what makes it tick. But please don't", "background: none; color: #1cb2ba; font-size: large;");
+            console.log("%cYou could mess a few things up by puggling around in here, close this tab and stay safe.", "background: none; color: #1cb2ba; font-size: large;");
+        }
+    });
+    // console.log('%c', element);
+
+
+    $(".tooltipActivate").tooltip({
+        animation: true,
+        placement: "bottom"
+    });
+
+</script>
+</body>
+</html>

@@ -1,16 +1,46 @@
 {
-  "name": "chattly",
-  "version": "0.0.15",
-  "description": "chattly-app",
-  "main": "index.js",
-  "author": "Michael Grigoryan",
-  "private": false,
-  "license": "BSD3-Clause",
+  "name": "chattly-app",
+  "version": "1.0.0",
+  "description": "Chattly, your place to talk",
+  "main": "webserver.js",
   "dependencies": {
-    "express": "~4.17.1",
-    "socket.io": "~2.3.0"
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-flash": "^0.0.2",
+    "mariadb": "^2.5.3",
+    "method-override": "^3.0.0",
+    "node-localdb": "^0.0.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "serve-favicon": "^2.5.0",
+    "socket.io": "^2.3.0",
+    "uuid": "^8.3.2",
+    "vhost": "^3.0.2",
+    "winston": "^3.3.3"
   },
   "scripts": {
-    "start": "node index.js"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LordFarquhar/chattly-app.git"
+  },
+  "keywords": [
+    "chat",
+    "chatly",
+    "talk",
+    "social"
+  ],
+  "author": "Inanis",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LordFarquhar/chattly-app/issues"
+  },
+  "homepage": "https://github.com/LordFarquhar/chattly-app#readme"
 }

@@ -1,0 +1,36 @@
+<%- include("partials/navbar", {user:user}) %>
+
+<div class="container">
+    <div class="text-center">
+        <p class="display-1">Chattly Cookies</p>
+    </div>
+    <p class="display-3">What are cookies</p>
+    <p>I'll do my best to explain what cookies are but if you are unsure then I suggest watching <a
+                href="https://www.cookiesandyou.com" target="_blank">this short video</a> that will probably do a much
+        better
+        job than me</p>
+    <p>Cookies are small pieces of information that are stored on your computer that get sent to every page you look at
+        in a
+        particular website</p>
+    <p>These are useful for remembering who you are when you login, your shopping basket and preferences. They can also
+        be
+        used to personalize adverts</p>
+    <p class="display-3">How do we use cookies</p>
+    <p>We do not use any third party cookies, we believe all those annoying adverts shouldn't exist</p>
+    <p>The only cookies that you will receive from us are purely functional, no tracking, no metrics and definitely no
+        adverts</p>
+    <p>These cookies make sure that only you can talk as yourself... pretty important right!</p>
+    <p>You always have the option to not accept them, we cant make you and we won't if you don't want to, however this
+        will
+        limit the pages and functionality available to you</p>
+    <div class="text-center display-3">
+        <button type="button" class="btn btn-primary btn-lg acceptcookies">
+            I understand
+        </button>
+        <button type="button" class="btn btn-primary btn-lg dismisscookies">
+            Decline
+        </button>
+    </div>
+</div>
+
+<%- include("partials/footer", {user:user}) %>
